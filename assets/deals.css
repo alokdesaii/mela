@@ -1,0 +1,57 @@
+/* Shared by Offers (deals.html) and Diwali landing (diwali.html) */
+.page-hero .eyebrow{display:block;margin-bottom:var(--s2)}
+
+/* ---------- Festive banner ---------- */
+.fest-banner img{width:100%;aspect-ratio:1920/550;object-fit:cover;background:var(--green)}
+.fest-intro{text-align:center;max-width:640px;margin:0 auto}
+.fest-intro .eyebrow{display:block;margin-bottom:var(--s3)}
+.fest-intro h1{font-size:44px;line-height:1.1;font-weight:700;letter-spacing:-.01em;color:var(--green)}
+.fest-intro p{margin-top:var(--s3);color:var(--muted)}
+.fest-intro .pills{display:flex;justify-content:center;flex-wrap:wrap;gap:var(--s2);margin-top:var(--s5)}
+.fest-intro .pills span{font-size:13px;font-weight:600;padding:var(--s1) var(--s4);border-radius:999px;background:var(--cream);color:var(--green)}
+
+/* ---------- Bundle cards ---------- */
+.bundles{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--s5);margin-top:var(--s7)}
+.bundle{display:flex;flex-direction:column;background:var(--white);border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;transition:box-shadow .2s}
+.bundle:hover{box-shadow:var(--shadow)}
+.bundle figure{position:relative;background:var(--cream)}
+.bundle figure img{width:100%;aspect-ratio:648/300;object-fit:cover}
+.bundle figcaption{position:absolute;left:var(--s3);bottom:var(--s3);font-size:11px;color:var(--muted);background:rgba(255,255,255,.9);padding:2px var(--s2);border-radius:6px}
+.bundle .off{position:absolute;top:var(--s4);left:var(--s4);background:var(--orange);color:var(--white);font-size:12px;font-weight:700;padding:4px var(--s3);border-radius:999px}
+.bundle-body{flex:1;display:flex;flex-direction:column;padding:var(--s6)}
+.bundle h2{font-size:22px;line-height:1.3}
+.bundle .desc{color:var(--muted);font-size:14px;margin:var(--s1) 0 var(--s5)}
+.bundle .inc{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:var(--s3)}
+.bundle ul{list-style:none;columns:2;column-gap:var(--s5);font-size:14px}
+.bundle li{break-inside:avoid;padding:var(--s1) 0 var(--s1) var(--s5);position:relative}
+.bundle li::before{content:"";position:absolute;left:0;top:.75em;width:8px;height:8px;border-radius:50%;background:var(--gold)}
+.bundle-foot{display:flex;align-items:center;justify-content:space-between;gap:var(--s4);margin-top:auto;padding-top:var(--s5);border-top:1px solid var(--line)}
+.bundle-wrap{padding-top:var(--s5)}
+.bundle-price s{display:block;font-size:13px;color:var(--grey)}
+.bundle-price b{font-size:24px;color:var(--green);font-variant-numeric:tabular-nums}
+.bundle-foot .btn{height:48px}
+
+/* ---------- Offers page ---------- */
+.offer-tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s5)}
+.offer{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:var(--s2);min-height:220px;padding:var(--s6);border-radius:var(--r-lg);overflow:hidden;color:var(--white);background:var(--green)}
+.offer.gold{background:var(--gold);color:var(--green)}
+.offer.orange{background:var(--orange)}
+.offer::after{content:"";position:absolute;right:-60px;bottom:-60px;width:200px;height:200px;border-radius:50%;background:rgba(255,255,255,.1)}
+.offer .eyebrow{color:inherit;opacity:.8}
+.offer h3{font-size:24px;line-height:1.2;max-width:14ch}
+.offer p{font-size:14px;opacity:.85}
+.offer .code{font-family:ui-monospace,monospace;font-weight:700;letter-spacing:.06em;padding:var(--s1) var(--s3);border:1.5px dashed currentColor;border-radius:6px}
+.offer .btn{margin-top:auto;position:relative;z-index:1}
+.offer .btn-light{background:var(--white);color:var(--green)}
+
+@media (max-width:1100px){
+  .offer-tiles{grid-template-columns:1fr 1fr}
+}
+@media (max-width:860px){
+  .fest-intro h1{font-size:32px}
+  .bundles,.offer-tiles{grid-template-columns:1fr}
+  .bundles{margin-top:var(--s5)}
+  .bundle-body{padding:var(--s5)}
+  .bundle ul{columns:1}
+  .offer{min-height:0}
+}
