@@ -7,7 +7,7 @@
 **A polished, front-end-only redesign of [shop.mela.global](https://shop.mela.global)**
 <br>Authentic South Asian & Asian groceries, delivered across Hong Kong.
 
-[**Live preview → mela.vercel.app**](https://mela.vercel.app)
+[**Live preview → mela-global.vercel.app**](https://mela-global.vercel.app)
 
 ![HTML](https://img.shields.io/badge/HTML-static-013927?style=flat-square)
 ![CSS](https://img.shields.io/badge/CSS-no%20framework-013927?style=flat-square)
